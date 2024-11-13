@@ -1,0 +1,119 @@
+
+
+// detail blog
+.detail-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #181E23;
+    font-weight: bold;
+}
+
+.detail-sapo {
+    font-size: 17px;
+}
+.detail-content {
+
+    & figure {
+        margin-bottom: 1.25rem;
+
+        img {
+            width: 100%;
+            height: auto !important;
+            margin: auto;
+        }
+    }
+    & figure figcaption {
+        background: #f7f7f7;
+        padding: 0.625rem 0.9375rem;
+        font-size: 14px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        line-height: 1.25rem;
+        color: #555;
+    }
+    & figure figcaption em {
+        font-style: italic;
+    }
+    & p a {
+        color: #ff9222;
+        font-style: italic;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & p,
+    & li {
+        font-size: 15px;
+        margin-bottom: 18px;
+        line-height: 160%;
+        word-break: break-word;
+        color: #62605c;
+
+    }
+    & ul {
+        padding-left: 30px;
+    }
+    & ul li {
+        list-style: disc;
+    }
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: 'Raleway', sans-serif;
+        color: #181E23;
+    }
+    & > h2 {
+        font-size: 30px;
+    }
+    & > h3 {
+        font-size: 28px;
+    }
+    & > h4 {
+        font-size: 24px;
+    }
+    & > h5 {
+        font-size: 20px;
+    }
+    & > h6 {
+        font-size: 18px;
+    }
+
+    & blockquote {
+        background: #242d2e;
+        border-radius: 10px;
+        padding: 40px;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        color: #fff;
+
+        & p {
+            color: #fff;
+            font-size: 18px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        h2,h3,h4,h5,h6 {
+            color: #fff;
+        }
+
+        a {
+            color: #ff9222;
+        }
+    }
+
+}

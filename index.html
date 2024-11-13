@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        
+        <!-- end favicon -->
+        <title>Anna</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap"
+            as="style" onload="this.rel='stylesheet'"
+        />
+        <!-- end font -->
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <header id="header" class="header relative">
+            <div class="w-1060 header-container relative">
+                <!-- branding -->
+                <div class="header-branding text-center text-white">
+                    <div class="header-branding__title font-comfortaa"><a href="#" class="link">Anna</a></div>
+                    <p class="header-branding__des">Sharing Stories About Life</p>
+                </div>
+                <!-- end branding -->
+                <!-- pc -->
+                <div class="d-3xl-block d-lg-none">
+                    <nav class="navbar d-3xl-flex items-center justify-between px-40">
+                        <!-- left -->
+                        <div class="navbar-left">
+                            <ul class="social d-3xl-flex items-center">
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/facebook-f-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/x-twitter-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/vine-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/dribbble-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/instagram-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                            </ul>
+                        </div>
+                        <!-- end left -->
+                        
+                        <!-- center -->
+                        <div class="navbar-center">
+                            <ul class="menu d-3xl-flex items-center uppercase gap-20">
+                                <!-- item -->
+                                <li class="menu-item active">
+                                    <div class="menu-item__heading d-3xl-flex item-center">
+                                        <a href="#" class="title"><span class="title-sub">Home</span></a>
+                                        <div class="arrow-down ml-4">
+                                            <div class="arrow-item"></div>
+                                            <div class="arrow-item"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="menu-dropdown">
+                                        <li class="menu-dropdown__item">
+                                            <div class="menu-dropdown__item-heading d-3xl-flex item-center">
+                                                <a href="#" class="menu-dropdown__link flex-1">Features</a>
+                                                <div class="arrow-toggle flex-0">
+                                                    <img src="./images/svg/chevron-right-solid.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <ul class="menu-sub">
+                                                <li class="menu-sub__item"><a href="#" class="menu-sub__link">Single Post</a></li>
+                                                <li class="menu-sub__item"><a href="#" class="menu-sub__link">Single Post</a></li>
+                                                <li class="menu-sub__item"><a href="#" class="menu-sub__link">Single Post</a></li>
+                                                <li class="menu-sub__item"><a href="#" class="menu-sub__link">Single Post</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="menu-item">
+                                    <a href="#" class="title"><span class="title-sub">Travel</span></a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="menu-item">
+                                    <a href="#" class="title"><span class="title-sub">Travel</span></a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="menu-item">
+                                    <a href="#" class="title"><span class="title-sub">Travel</span></a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="menu-item">
+                                    <a href="#" class="title"><span class="title-sub">Travel</span></a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="menu-item">
+                                    <a href="#" class="title"><span class="title-sub">Travel</span></a>
+                                </li>
+                                <!-- end item -->
+                                 
+                            </ul>
+                        </div>
+                        <!-- end center -->
+                        
+                        <!-- right -->
+                        <div class="navbar-right h-full">
+                            <div class="search d-3xl-flex itesm-center h-full js__searchContainer">
+                                <!-- content -->
+                                <div class="search-content h-full js__searchContent pr-10">
+                                    <form action="" class="search-form h-full w-full">
+                                        <input type="text" class="search-input h-full w-full text-right text-white fs-16" placeholder="type and hit enter">
+                                    </form>
+                                </div>
+                                <!-- end content -->
+                                
+                                <!-- icon -->
+                                <div class="search-icon h-full js__searchIcon">
+                                    <img src="./images/svg/search-w.svg" alt="" class="img img-search flex-0">
+                                    <img src="./images/svg/xmark-w.svg" alt="" class="img img-xmark flex-0">
+                                </div>
+                                <!-- end icon -->
+                            </div>
+                        </div>
+                        <!-- end right -->
+                    </nav>
+                </div>
+                <!-- end pc -->
+                 
+                <!-- mb -->
+                <div class="d-3xl-none d-lg-block">
+                    
+                </div>
+                <!-- end mb -->
+            </div>
+
+        
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+            <!-- primary -->
+            <section class="section-primary relative z-20 over-hidden w-wrapper">
+                <div class="section-primary__container w-1060 w-md-500 js__oneSlidesContainer slide-arrow-primary">
+                    <div class="swiper js__oneSlide">
+                        <div class="swiper-wrapper">
+                            <!-- slide -->
+                            <div class="swiper-slide">
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <div class="image-wrapper">
+                                            <img src="./images/2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- end img -->
+                                    
+                                    <!-- content -->
+                                    <div class="article-content absolute inset-0">
+                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                        <h3 class="article-title font-heyoctober mb-30">
+                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                        </h3>
+                                        <div class="article-btn">
+                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                            </div>
+                            <!-- end slide -->
+                            <!-- slide -->
+                            <div class="swiper-slide">
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <div class="image-wrapper">
+                                            <img src="./images/2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- end img -->
+                                    
+                                    <!-- content -->
+                                    <div class="article-content absolute inset-0">
+                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                        <h3 class="article-title font-heyoctober mb-30">
+                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                        </h3>
+                                        <div class="article-btn">
+                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                            </div>
+                            <!-- end slide -->
+                            <!-- slide -->
+                            <div class="swiper-slide">
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <div class="image-wrapper">
+                                            <img src="./images/2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- end img -->
+                                    
+                                    <!-- content -->
+                                    <div class="article-content absolute inset-0">
+                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                        <h3 class="article-title font-heyoctober mb-30">
+                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                        </h3>
+                                        <div class="article-btn">
+                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                            </div>
+                            <!-- end slide -->
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- end primary -->
+
+            <!-- secondary -->
+            
+            <!-- end secondary -->
+
+            <!-- tertiary -->
+           
+            <!-- end tertiary -->
+
+            <!-- quaternary -->
+           
+            <!-- end quaternary -->
+
+            <!-- quinary -->
+            
+            <!-- end quinary -->
+
+            <!-- senary -->
+            
+            <!-- end senary -->
+
+            <!-- septenary -->
+            
+            <!-- end septenary -->
+
+            <!-- octonary -->
+            
+            <!-- end octonary -->
+
+            <!-- nonary-->
+             
+            <!-- end nonary-->
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <!-- back top -->
+            <div id="back-top">
+                <img src="./images/svg/arrow-top-w.svg" alt="">
+            </div>
+            <!-- end back top -->
+            
+
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
