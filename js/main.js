@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 new Swiper(slider, {
                     slidesPerView: 1,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                     slidesPerGroup: 1,
+                    loop:true,
                     navigation: {
                         nextEl: next || null,
                         prevEl: prev || null,
@@ -97,39 +98,37 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-  
-
-
-    // xử lý sự kiện để show dropdown
-     function handleShowDropdown() {
+    // xử lý show search pc
+    function handleShowSearchPc() {
         
-        const dropdownContainers = document.querySelectorAll(".js__dropdownContainer");
+        const searchPc = document.querySelector(".js__searchContainer");
 
 
-        if (dropdownContainers.length === 0) return;
+        if (!searchPc ) return;
 
 
-        dropdownContainers.forEach((dropdownContainer)=>{
-
-            const dropdown = dropdownContainer.querySelector(".js__showDropdown");
-            const dropdownContent = dropdownContainer.querySelector(".js__dropdownContent");
-            const overlay = dropdownContainer.querySelector(".js__overlay");
+        const searchContent = searchPc.querySelector(".js__searchContent");
+        const searchIcon = searchPc.querySelector(".js__searchIcon");
+        const input = searchPc.querySelector(".js__inputSearch");
 
 
-            dropdown.onclick = function () {
-                dropdownContent.classList.toggle("active");
-                overlay.classList.add('active')
+        searchIcon.onclick = function () {
 
-            };
+            if(searchContent.classList.contains('active') && this.classList.contains('active')){
 
-            overlay.onclick = function () {
-                dropdownContent.classList.remove("active");
-                this.classList.remove("active");
-            };
-        })
+                searchContent.classList.remove("active");
+                this.classList.remove('active');
+                input.value = "";
+            }else {
+                searchContent.classList.add("active");
+                this.classList.add('active');
+                input.focus();
+            }
 
+        };
       
     }
+
 
     // Xử lý sự kiện khi nhấn nút "back to top"
     function handleBackTop() {
@@ -225,14 +224,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Xử lý sự kiện khi cuộn trang
     function handleWindowScroll() {
-        // handleStickyHeader();
+        handleStickyHeader();
         handleBackTopVisibility()
     }
 
     // Khởi tạo tất cả các chức năng
     function initApp() {
         handleBackTop();
-        // handleShowDropdown();
+        handleShowSearchPc();
         handleShowSubMenu();
         handleShowDropdownSubMenu();
         handleVideo169();

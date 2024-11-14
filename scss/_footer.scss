@@ -23,3 +23,23 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
+
+.footer {
+    background-color: #fafafa;
+
+    .footer-text {
+        font-family: "Jost", sans-serif;
+
+        p {
+            font-family: "Jost", sans-serif;
+        }
+
+        .icon-heart {
+            width: 12px;
+            height: auto;
+            margin: 0 6px;
+            filter: invert(90%) sepia(90%) saturate(3182%) hue-rotate(332deg) brightness(103%) contrast(105%);
+        }
+    }
+}

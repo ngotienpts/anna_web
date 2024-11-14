@@ -24,7 +24,7 @@
     <body>
         
         <!-- header -->
-        <header id="header" class="header relative">
+        <header id="header" class="header relative js__stickyHeader w-wrapper">
             <div class="w-1060 header-container relative">
                 <!-- branding -->
                 <div class="header-branding text-center text-white">
@@ -33,7 +33,7 @@
                 </div>
                 <!-- end branding -->
                 <!-- pc -->
-                <div class="d-3xl-block d-lg-none">
+                <div class="d-3xl-block d-md-none">
                     <nav class="navbar d-3xl-flex items-center justify-between px-40">
                         <!-- left -->
                         <div class="navbar-left">
@@ -82,7 +82,7 @@
                             <ul class="menu d-3xl-flex items-center uppercase gap-20">
                                 <!-- item -->
                                 <li class="menu-item active">
-                                    <div class="menu-item__heading d-3xl-flex item-center">
+                                    <div class="menu-item__heading d-3xl-flex items-center">
                                         <a href="#" class="title"><span class="title-sub">Home</span></a>
                                         <div class="arrow-down ml-4">
                                             <div class="arrow-item"></div>
@@ -91,7 +91,7 @@
                                     </div>
                                     <ul class="menu-dropdown">
                                         <li class="menu-dropdown__item">
-                                            <div class="menu-dropdown__item-heading d-3xl-flex item-center">
+                                            <div class="menu-dropdown__item-heading d-3xl-flex items-center">
                                                 <a href="#" class="menu-dropdown__link flex-1">Features</a>
                                                 <div class="arrow-toggle flex-0">
                                                     <img src="./images/svg/chevron-right-solid.svg" alt="">
@@ -143,7 +143,7 @@
                                 <!-- content -->
                                 <div class="search-content h-full js__searchContent pr-10">
                                     <form action="" class="search-form h-full w-full">
-                                        <input type="text" class="search-input h-full w-full text-right text-white fs-16" placeholder="type and hit enter">
+                                        <input type="text" class="search-input h-full w-full text-right text-white fs-16 js__inputSearch" placeholder="type and hit enter">
                                     </form>
                                 </div>
                                 <!-- end content -->
@@ -162,8 +162,122 @@
                 <!-- end pc -->
                  
                 <!-- mb -->
-                <div class="d-3xl-none d-lg-block">
-                    
+                <div class="d-3xl-none d-md-block">
+                    <nav class="navbar-mb d-3xl-flex items-center justify-between w-md-500">
+                        <!-- left -->
+                        <div class="navbar-mb__left">
+                            <div class="sub-menu">
+                                <!-- icon bar -->
+                                <div class="icon-bar js__clickShowMenuMb px-15 py-10">
+                                    <img src="./images/svg/bar-w.svg" alt="">
+                                </div>
+                                <!-- end icon bar -->
+                                <!-- content -->
+                                <div class="sub-menu__content">
+                                    <!-- close -->
+                                    <div class="sub-menu__close js__closeSubMenu h-56 p-4 mb-8 d-3xl-flex items-center text-white">
+                                        <img src="./images/svg/close-w.svg" alt="">
+                                    </div>
+                                    <!-- end close -->
+
+                                    <div class="sub-menu__container">
+                                        <!-- list -->
+                                        <div class="sub-menu__list">
+                                            
+                                            <!-- item -->
+                                            <div class="sub-menu__item">
+                                                <!-- heading -->
+                                                <div class="heading-sub js__dropDown d-3xl-flex items-center justify-between px-16 py-12 text-white">
+                                                    <a href="#el-five" class="heading-sub__title fs-16 fw-500">
+                                                        Cate 1
+                                                    </a>
+                                                    <div class="heading-sub__arrow">
+                                                        <img src="./images/svg/arrow-down-w.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- end heading -->
+
+                                                <!-- sub menu list -->
+                                                <ul class="list-sub js__listSubMenu">
+                                                    <li class="item-sub">
+                                                        <a href="#" class="item-sub__link fs-16">Cate 1.1</a>
+                                                        <ul class="item-children-list">
+                                                            <li class="item-children-item">
+                                                                <a href="#" class="item-children-link"> Cate 1.1.1</a>
+                                                            </li>
+                                                            <li class="item-children-item">
+                                                                <a href="#" class="item-children-link"> Cate 1.1.2</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="item-sub">
+                                                        <a href="#" class="item-sub__link fs-16">Cate 1.2</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- end sub menu list -->
+                                            </div>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <div class="sub-menu__item">
+                                                <!-- heading -->
+                                                <div class="heading-sub js__dropDown d-3xl-flex items-center justify-between px-16 py-12 text-white">
+                                                    <a href="#" class="heading-sub__title fs-16 fw-500">
+                                                        Cate 2</a>
+                                                </div>
+                                                <!-- end heading -->
+                                            </div>
+                                            <!-- end item -->
+                                        </div>
+                                        <!-- end list -->
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                                <div class="overlay js__overlay"></div>
+                            </div>
+                        </div>
+                        <!-- end left -->
+                        <!-- right -->
+                        <div class="navbar-mb__right pr-15">
+                            <ul class="social d-3xl-flex items-center">
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/facebook-f-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/x-twitter-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/vine-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/dribbble-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <img src="./images/svg/instagram-w.svg" alt="" class="social-icon">
+                                    </a>
+                                </li>
+                                <!-- end item -->
+                            </ul>
+                        </div>
+                        <!-- end right -->
+                    </nav>
                 </div>
                 <!-- end mb -->
             </div>
@@ -175,135 +289,817 @@
         <main id="main" class="main">
             <!-- primary -->
             <section class="section-primary relative z-20 over-hidden w-wrapper">
-                <div class="section-primary__container w-1060 w-md-500 js__oneSlidesContainer slide-arrow-primary">
-                    <div class="swiper js__oneSlide">
-                        <div class="swiper-wrapper">
-                            <!-- slide -->
-                            <div class="swiper-slide">
-                                <div class="article relative">
-                                    <!-- img -->
-                                    <div class="article-img">
-                                        <div class="image-wrapper">
-                                            <img src="./images/2.jpg" alt="">
+                <div class="section-primary__container w-1060 w-md-500">
+                    <!-- slide wrapper-->
+                    <div class="section-primary__slide js__oneSlidesContainer slide-arrow-primary">
+                        <div class="swiper js__oneSlide">
+                            <div class="swiper-wrapper">
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article relative">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <div class="image-wrapper">
+                                                <img src="./images/2.jpg" alt="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- end img -->
-                                    
-                                    <!-- content -->
-                                    <div class="article-content absolute inset-0">
-                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
-                                        <h3 class="article-title font-heyoctober mb-30">
-                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
-                                        </h3>
-                                        <div class="article-btn">
-                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        <!-- end img -->
+                                        
+                                        <!-- content -->
+                                        <div class="article-content absolute inset-0">
+                                            <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                            <h3 class="article-title font-heyoctober mb-30 fix-text3">
+                                                <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                            </h3>
+                                            <div class="article-btn">
+                                                <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                            </div>
                                         </div>
+                                        <!-- end content -->
                                     </div>
-                                    <!-- end content -->
                                 </div>
-                            </div>
-                            <!-- end slide -->
-                            <!-- slide -->
-                            <div class="swiper-slide">
-                                <div class="article relative">
-                                    <!-- img -->
-                                    <div class="article-img">
-                                        <div class="image-wrapper">
-                                            <img src="./images/2.jpg" alt="">
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article relative">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <div class="image-wrapper">
+                                                <img src="./images/2.jpg" alt="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- end img -->
-                                    
-                                    <!-- content -->
-                                    <div class="article-content absolute inset-0">
-                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
-                                        <h3 class="article-title font-heyoctober mb-30">
-                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
-                                        </h3>
-                                        <div class="article-btn">
-                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        <!-- end img -->
+                                        
+                                        <!-- content -->
+                                        <div class="article-content absolute inset-0">
+                                            <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                            <h3 class="article-title font-heyoctober mb-30 fix-text3">
+                                                <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                            </h3>
+                                            <div class="article-btn">
+                                                <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                            </div>
                                         </div>
+                                        <!-- end content -->
                                     </div>
-                                    <!-- end content -->
                                 </div>
-                            </div>
-                            <!-- end slide -->
-                            <!-- slide -->
-                            <div class="swiper-slide">
-                                <div class="article relative">
-                                    <!-- img -->
-                                    <div class="article-img">
-                                        <div class="image-wrapper">
-                                            <img src="./images/2.jpg" alt="">
+                                <!-- end slide -->
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article relative">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <div class="image-wrapper">
+                                                <img src="./images/2.jpg" alt="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- end img -->
-                                    
-                                    <!-- content -->
-                                    <div class="article-content absolute inset-0">
-                                        <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
-                                        <h3 class="article-title font-heyoctober mb-30">
-                                            <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
-                                        </h3>
-                                        <div class="article-btn">
-                                            <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                        <!-- end img -->
+                                        
+                                        <!-- content -->
+                                        <div class="article-content absolute inset-0">
+                                            <h2 class="article-meta fs-10 uppercase mb-15"><a href="#">life</a></h2>
+                                            <h3 class="article-title font-heyoctober mb-30 fix-text3">
+                                                <a href="#" class="w-50 mx-auto d-3xl-block scale-107">Stay Calm and Start Blogging</a> 
+                                            </h3>
+                                            <div class="article-btn">
+                                                <a href="#" class="more-view btn btn--white btn--small font-notosans fs-11 uppercase">View post</a>
+                                            </div>
                                         </div>
+                                        <!-- end content -->
                                     </div>
-                                    <!-- end content -->
                                 </div>
+                                <!-- end slide -->
                             </div>
-                            <!-- end slide -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                    
+                    <!-- end slide wrapper -->
+
+                    <!-- small -->
+                    <div class="section-primary__small d-3xl-grid col-4 mt-20 ml-3xl--10 mr-3xl--10">
+                        <!-- article -->
+                        <div class="article px-10 relative">
+                            <!-- img -->
+                            <div class="article-img">
+                                <a href="#" class="image-wrapper-full has-coating">
+                                    <img src="./images/2.jpg" alt="">
+                                    <h3 class="article-title text-white font-comfortaa fs-20 absolute fix-text">Stuff</h3>
+                                </a>
+                            </div>
+                            <!-- end img -->
+
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article px-10 relative">
+                            <!-- img -->
+                            <div class="article-img">
+                                <a href="#" class="image-wrapper-full has-coating">
+                                    <img src="./images/2.jpg" alt="">
+                                    <h3 class="article-title text-white font-comfortaa fs-20 absolute fix-text">Stuff</h3>
+                                </a>
+                            </div>
+                            <!-- end img -->
+
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article px-10 relative">
+                            <!-- img -->
+                            <div class="article-img">
+                                <a href="#" class="image-wrapper-full has-coating">
+                                    <img src="./images/2.jpg" alt="">
+                                    <h3 class="article-title text-white font-comfortaa fs-20 absolute fix-text">Stuff</h3>
+                                </a>
+                            </div>
+                            <!-- end img -->
+
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article px-10 relative">
+                            <!-- img -->
+                            <div class="article-img">
+                                <a href="#" class="image-wrapper-full has-coating">
+                                    <img src="./images/2.jpg" alt="">
+                                    <h3 class="article-title text-white font-comfortaa fs-20 absolute fix-text">Stuff</h3>
+                                </a>
+                            </div>
+                            <!-- end img -->
+
+                        </div>
+                        <!-- end article -->
+                    </div>
+                    <!-- end small -->
                 </div>
             </section>
             <!-- end primary -->
 
             <!-- secondary -->
-            
+            <section class="section-secondary relative z-20 over-hidden w-wrapper">
+                <div class="section-secondary__container d-3xl-flex d-md-block w-1060 w-md-500">
+                    <!-- left -->
+                    <div class="section-secondary__left flex-1">
+                        <!-- articles -->
+                        <div class="articles">
+                            <!-- article -->
+                            <div class="article mb-30">
+                                <!-- title -->
+                                <h3 class="article-title fs-32 text-center">
+                                    <a href="#">Mastering Street Photography</a>
+                                </h3>
+                                <!-- end title -->
+
+                                <!-- meta -->
+                                <div class="article-meta d-3xl-flex items-center justify-center my-8 fs-11">
+                                    <!-- category -->
+                                    <div class="article-category mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-category__link">Food</a>
+                                    </div>
+                                    <!-- end category -->
+                                    
+                                    <!-- posted -->
+                                    <div class="article-posted mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-posted__link">August 2, 2016</a>
+                                    </div>
+                                    <!-- end posted -->
+
+                                    <!-- share -->
+                                    <div class="article-share mb-8 mr-15 uppercase relative">
+                                        <div class="article-share__heading d-3xl-flex items-center">
+                                            <img src="./images/svg/share-nodes-solid.svg" alt="" class="icon flex-0 mr-4">
+                                            <span class="text d-3xl-block flex-1">Share</span>
+                                        </div>
+
+                                        <div class="article-share__listWrap absolute">
+                                            <ul class="article-share__list absolute">
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/facebook-f-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Facebook</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/x-twitter.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Twitter</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/pinterest-p-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Pinterest</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/envelope-regular.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Email</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end share -->
+
+                                    <!-- like -->
+                                    <a href="#" class="article-like mb-8 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/heart-regular.svg" alt="" class="article-like__icon mr-4 flex-0">
+                                        <span class="article-like__text d-3xl-block flex-1">12</span>
+                                    </a>
+                                    <!-- end like -->
+                                </div>
+                                <!-- end meta -->
+
+                                <!-- img -->
+                                <div class="article-img mt-30 mb-20">
+                                    <a href="#" class="image-wrapper">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+
+                                <!-- des -->
+                                <div class="article-des fs-13 mb-20 lh-140">
+                                    <p>Là đất nước sản xuất muối tiềm năng,nhưng mỗi năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng nhu cầu trong nước. Muối nội địa có giá thành cao, chất lượng thấp, rất khó cạnh tranh với muối nhập khẩu nên khó tiêu thụ.</p>
+                                </div>
+                                <!-- end des -->
+
+                                <!-- read more -->
+                                <div class="article-btn d-3xl-flex items-center justify-center my-15">
+                                    <a href="#" class="more-view btn font-notosans fs-11 uppercase">Read more</a>
+                                </div>
+                                <!-- end read more -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article mb-30">
+                                <!-- title -->
+                                <h3 class="article-title fs-32 text-center">
+                                    <a href="#">Mastering Street Photography</a>
+                                </h3>
+                                <!-- end title -->
+
+                                <!-- meta -->
+                                <div class="article-meta d-3xl-flex items-center justify-center my-8 fs-11">
+                                    <!-- category -->
+                                    <div class="article-category mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-category__link">Food</a>
+                                    </div>
+                                    <!-- end category -->
+                                    
+                                    <!-- posted -->
+                                    <div class="article-posted mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-posted__link">August 2, 2016</a>
+                                    </div>
+                                    <!-- end posted -->
+
+                                    <!-- share -->
+                                    <div class="article-share mb-8 mr-15 uppercase relative">
+                                        <div class="article-share__heading d-3xl-flex items-center">
+                                            <img src="./images/svg/share-nodes-solid.svg" alt="" class="icon flex-0 mr-4">
+                                            <span class="text d-3xl-block flex-1">Share</span>
+                                        </div>
+
+                                        <div class="article-share__listWrap absolute">
+                                            <ul class="article-share__list absolute">
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/facebook-f-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Facebook</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/x-twitter.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Twitter</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/pinterest-p-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Pinterest</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/envelope-regular.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Email</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end share -->
+
+                                    <!-- like -->
+                                    <a href="#" class="article-like mb-8 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/heart-regular.svg" alt="" class="article-like__icon mr-4 flex-0">
+                                        <span class="article-like__text d-3xl-block flex-1">12</span>
+                                    </a>
+                                    <!-- end like -->
+                                </div>
+                                <!-- end meta -->
+
+                                <!-- img -->
+                                <div class="article-img mt-30 mb-20">
+                                    <a href="#" class="image-wrapper">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+
+                                <!-- des -->
+                                <div class="article-des fs-13 mb-20 lh-140">
+                                    <p>Là đất nước sản xuất muối tiềm năng,nhưng mỗi năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng nhu cầu trong nước. Muối nội địa có giá thành cao, chất lượng thấp, rất khó cạnh tranh với muối nhập khẩu nên khó tiêu thụ.</p>
+                                </div>
+                                <!-- end des -->
+
+                                <!-- read more -->
+                                <div class="article-btn d-3xl-flex items-center justify-center my-15">
+                                    <a href="#" class="more-view btn font-notosans fs-11 uppercase">Read more</a>
+                                </div>
+                                <!-- end read more -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article mb-30">
+                                <!-- title -->
+                                <h3 class="article-title fs-32 text-center">
+                                    <a href="#">Mastering Street Photography</a>
+                                </h3>
+                                <!-- end title -->
+
+                                <!-- meta -->
+                                <div class="article-meta d-3xl-flex items-center justify-center my-8 fs-11">
+                                    <!-- category -->
+                                    <div class="article-category mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-category__link">Food</a>
+                                    </div>
+                                    <!-- end category -->
+                                    
+                                    <!-- posted -->
+                                    <div class="article-posted mb-8 mr-15 uppercase">
+                                        <a href="#" class="article-posted__link">August 2, 2016</a>
+                                    </div>
+                                    <!-- end posted -->
+
+                                    <!-- share -->
+                                    <div class="article-share mb-8 mr-15 uppercase relative">
+                                        <div class="article-share__heading d-3xl-flex items-center">
+                                            <img src="./images/svg/share-nodes-solid.svg" alt="" class="icon flex-0 mr-4">
+                                            <span class="text d-3xl-block flex-1">Share</span>
+                                        </div>
+
+                                        <div class="article-share__listWrap absolute">
+                                            <ul class="article-share__list absolute">
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/facebook-f-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Facebook</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/x-twitter.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Twitter</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/pinterest-p-brands-solid.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Pinterest</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <li class="article-share__item uppercase">
+                                                    <a href="#" class="article-share__link d-3xl-flex items-center py-12 px-8">
+                                                        <img src="./images/svg/envelope-regular.svg" alt="" class="article-share__icon mr-4 flex-0">
+                                                        <span class="article-share__text d-3xl-block flex-1">Email</span>
+                                                    </a>
+                                                </li>
+                                                <!-- end item -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end share -->
+
+                                    <!-- like -->
+                                    <a href="#" class="article-like mb-8 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/heart-regular.svg" alt="" class="article-like__icon mr-4 flex-0">
+                                        <span class="article-like__text d-3xl-block flex-1">12</span>
+                                    </a>
+                                    <!-- end like -->
+                                </div>
+                                <!-- end meta -->
+
+                                <!-- img -->
+                                <div class="article-img mt-30 mb-20">
+                                    <a href="#" class="image-wrapper">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+
+                                <!-- des -->
+                                <div class="article-des fs-13 mb-20 lh-140">
+                                    <p>Là đất nước sản xuất muối tiềm năng,nhưng mỗi năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng nhu cầu trong nước. Muối nội địa có giá thành cao, chất lượng thấp, rất khó cạnh tranh với muối nhập khẩu nên khó tiêu thụ.</p>
+                                </div>
+                                <!-- end des -->
+
+                                <!-- read more -->
+                                <div class="article-btn d-3xl-flex items-center justify-center my-15">
+                                    <a href="#" class="more-view btn font-notosans fs-11 uppercase">Read more</a>
+                                </div>
+                                <!-- end read more -->
+                            </div>
+                            <!-- end article -->
+                        </div>
+                        <!-- end articles -->
+
+                        <div class="navigation-primary d-3xl-flex items-center justify-between my-40">
+                            <a href="#" class="navi-prev d-3xl-flex items-center">
+                                <img src="./images/svg/arrow-left-long-solid.svg" alt="" class="icon mr-8 flex-0">
+                                <span class="flex-1 d-3xl-block fw-600 fs-14 uppercase">Older posts</span>
+                            </a>
+                            <a href="#" class="navi-next d-3xl-flex items-center">
+                                <span class="flex-1 d-3xl-block fw-600 fs-14 uppercase">newer posts</span>
+                                <img src="./images/svg/arrow-right-long-solid.svg" alt="" class="icon ml-8 flex-0">
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- end left -->
+
+                    <!-- right -->
+                    <div class="section-secondary__right flex-0">
+
+                        <!-- box right primary -->
+                        <div class="box-right-primary mb-40">
+                            <!-- heading -->
+                            <h2 class="heading-one mb-30 fs-11 text-center uppercase font-questrial"><span class="heading-one__text tracking-2">About me</span></h2>
+                            <!-- end heading -->
+
+                            <!-- container -->
+                            <div class="box-right-primary__container">
+                                <!-- article -->
+                                <div class="article">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="image-wrapper-full">
+                                            <img src="./images/2.jpg" alt="" class="border-999">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+
+                                    <!-- des -->
+                                    <div class="article-des fs-13 mt-10 lh-140">
+                                        <p>Là đất nước sản xuất muối tiềm năng,nhưng mỗi năm Việt Nam vẫn phải nhập khẩu muối để đáp ứng nhu cầu trong nước. Muối nội địa có giá thành cao, chất lượng thấp, rất khó cạnh tranh với muối nhập khẩu nên khó tiêu thụ. <a href="#" class="link-decoration-gray">more</a></p>
+                                    </div>
+                                    <!-- end des -->
+                                </div>
+                                <!-- end article -->
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end box right primary -->
+
+                        <!-- box right secondary -->
+                        <div class="box-right-secondary mb-40">
+                            <!-- heading -->
+                            <h2 class="heading-one mb-30 fs-11 text-center uppercase font-questrial"><span class="heading-one__text tracking-2">Categories</span></h2>
+                            <!-- end heading -->
+
+                            <!-- container -->
+                            <div class="box-right-secondary__container">
+                                <ul class="box-right-secondary__list"> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Adventure</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Food</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Life</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Nature</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Travel</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end box right secondary -->
+
+
+                        <!-- box right tertiary -->
+                        <div class="box-right-tertiary mb-40">
+                            <!-- container -->
+                            <div class="box-right-tertiary__container p-24">
+                                <!-- sapo -->
+                                <div class="box-right-tertiary__sapo fs-11 tracking-1 text-center uppercase mb-20">
+                                    <p>Subscribe your e-mail address and get to know about fresh stuff!</p>
+                                </div>
+                                <!-- end sapo -->
+
+                                <!-- form -->
+                                <div class="box-right-tertiary__form">
+                                    <form action="" class="form">
+                                        <input type="email" name="EMAIL" placeholder="Your email address" required="" class="form-input text-center mb-20">
+                                        <div class="d-3xl-flex items-center justify-center">
+                                            <input type="submit" value="Sign up" class="btn font-notosans fs-12 uppercase form-submit">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end box right tertiary -->
+
+                        <!-- box right quaternary -->
+                        <div class="box-right-quaternary mb-40">
+                            <!-- heading -->
+                            <h2 class="heading-one mb-30 fs-11 text-center uppercase font-questrial"><span class="heading-one__text tracking-2">Trending posts</span></h2>
+                            <!-- end heading -->
+                            <!-- container -->
+                            <div class="box-right-quaternary__container">
+                                <!-- article -->
+                                <div class="article d-3xl-flex pb-15">
+                                    <!-- img -->
+                                    <div class="article-img flex-0 w-30">
+                                        <a href="#" class="image-wrapper-full">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content flex-1 pl-15">
+                                        <h3 class="article-title fs-16 mb-10 fw-500">
+                                            <a href="#">Enjoy Little Things</a>
+                                        </h3>
+                                        <div class="article-posted uppercase fs-11 tracking-1 text-gray-2206">
+                                            <span>August 2, 2016</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article d-3xl-flex pb-15">
+                                    <!-- img -->
+                                    <div class="article-img flex-0 w-30">
+                                        <a href="#" class="image-wrapper-full">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content flex-1 pl-15">
+                                        <h3 class="article-title fs-16 mb-10 fw-500">
+                                            <a href="#">Enjoy Little Things</a>
+                                        </h3>
+                                        <div class="article-posted uppercase fs-11 tracking-1 text-gray-2206">
+                                            <span>August 2, 2016</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article d-3xl-flex pb-15">
+                                    <!-- img -->
+                                    <div class="article-img flex-0 w-30">
+                                        <a href="#" class="image-wrapper-full">
+                                            <img src="./images/3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content flex-1 pl-15">
+                                        <h3 class="article-title fs-16 mb-10 fw-500">
+                                            <a href="#">Enjoy Little Things</a>
+                                        </h3>
+                                        <div class="article-posted uppercase fs-11 tracking-1 text-gray-2206">
+                                            <span>August 2, 2016</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end box right quaternary -->
+
+                        <!-- ads right -->
+                        <div class="ads-right mb-40">
+                            <a href="#">
+                                <img src="./images/ads_right.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end ads right -->
+
+                        <!-- box right secondary -->
+                        <div class="box-right-secondary mb-40">
+                            <!-- heading -->
+                            <h2 class="heading-one mb-30 fs-11 text-center uppercase font-questrial"><span class="heading-one__text tracking-2">Categories</span></h2>
+                            <!-- end heading -->
+
+                            <!-- container -->
+                            <div class="box-right-secondary__container">
+                                <ul class="box-right-secondary__list"> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Adventure</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Food</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Life</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Nature</a> 
+                                    </li> 
+                                    <li class="box-right-secondary__item text-center fs-15 mb-10">
+                                        <a href="#" class="box-right-secondary__link">Travel</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end container -->
+                        </div>
+                        <!-- end box right secondary -->
+
+                    </div>
+                    <!-- end right -->
+                    
+                </div>
+            </section>
             <!-- end secondary -->
 
             <!-- tertiary -->
-           
+            <section class="section-tertary relative z-20 over-hidden w-wrapper">
+                <div class="section-tertary__container w-1060 w-md-500">
+                    <h2 class="section-tertary__title text-center text-white mb-20">Stay Updated</h2>
+                    <div class="section-tertary__sapo fs-12 text-white mb-10 text-center">
+                        <p>Subscribe your e-mail address and get to know about fresh stuff!</p>
+                    </div>
+
+                    <div class="section-tertary__form my-10">
+                        <form action="" class="form">
+                            <div class="d-3xl-flex d-sm-block items-center justify-center">
+                                <input type="email" name="EMAIL" placeholder="Your email address" required="" class="form-input text-center">
+                                <div class="d-3xl-flex items-center justify-center">
+                                    <input type="submit" value="Sign up" class="btn btn--white font-notosans fs-12 uppercase form-submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
             <!-- end tertiary -->
 
             <!-- quaternary -->
-           
+            <section class="section-quaternary relative z-20 over-hidden">
+                <div class="section-quaternary__container w-1920">
+                    <!-- gallery -->
+                    <div class="gallery d-3xl-flex">
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                        <!-- article -->
+                        <div class="article">
+                            <a href="#" class="image-wrapper-full">
+                                <img src="./images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <!-- end article -->
+                    </div>
+                    <!-- end gallery -->
+                </div>
+            </section>
             <!-- end quaternary -->
 
-            <!-- quinary -->
-            
-            <!-- end quinary -->
-
-            <!-- senary -->
-            
-            <!-- end senary -->
-
-            <!-- septenary -->
-            
-            <!-- end septenary -->
-
-            <!-- octonary -->
-            
-            <!-- end octonary -->
-
-            <!-- nonary-->
-             
-            <!-- end nonary-->
 
         </main>
         <!-- end main -->
         <!-- footer -->
-        <footer id="footer" class="footer">
+        <footer id="footer" class="footer relative z-20 over-hidden w-wrapper">
             <!-- back top -->
             <div id="back-top">
                 <img src="./images/svg/arrow-top-w.svg" alt="">
             </div>
             <!-- end back top -->
+
+            <div class="footer-container w-1060 py-20">
+                <div class="footer-text d-3xl-flex items-center justify-center fs-11">
+                    <p>crafted with</p> 
+                    <img src="./images/svg/heart-regular.svg" alt="" class="icon-heart"> 
+                    <em>&nbsp;by&nbsp; </em>  
+                    <p> Pixelwars</p>
+                </div>
+            </div>
             
 
         </footer>

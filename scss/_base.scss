@@ -69,7 +69,9 @@ a:focus {
     color: inherit;
     color: #ff9222;
 }
-
+em {
+    font-style: italic;
+}
 .link-decoration {
     &:hover {
         text-decoration: underline;
@@ -1022,13 +1024,13 @@ p {
 
 /*=================================================================*/
 .tracking-1 {
-    // letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 .tracking-2 {
-    // letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 .tracking--2 {
-    // letter-spacing: -2px;
+    letter-spacing: -2px;
 }
 /*=================================================================*/
 .ml-3xl--15 {
@@ -1036,6 +1038,12 @@ p {
 }
 .mr-3xl--15 {
     margin-right: -15px;
+}
+.ml-3xl--10 {
+    margin-left: -10px;
+}
+.mr-3xl--10 {
+    margin-right: -10px;
 }
 
 .border-e4 {
@@ -1046,5 +1054,16 @@ p {
     transition: transform 0.3s;
     &:hover {
         transform: scale(1.07,1.07);
+    }
+}
+
+.coating {
+
+}
+
+.link-decoration-gray {
+    border-bottom: 2px solid rgb(0 0 0 / 9%);
+    &:hover {
+        border-color: #222;
     }
 }
