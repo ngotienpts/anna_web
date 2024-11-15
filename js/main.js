@@ -34,70 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // khởi tạo slider với 3 item
-    function initSliderThreeItems() {
-        const threeSlides = document.querySelectorAll(".js__threeSlidesContainer");
-        if (threeSlides) {
-            threeSlides.forEach((item) => {
-                var slider = item.querySelector(".js__threeSlide");
-                var next = item.querySelector(".swiper-button-next");
-                var prev = item.querySelector(".swiper-button-prev");
-                var pagi = item.querySelector(".swiper-pagination");
-                new Swiper(slider, {
-                    slidesPerView: 1,
-                    spaceBetween: 15,
-                    slidesPerGroup: 1,
-                    navigation: {
-                        nextEl: next || null,
-                        prevEl: prev || null,
-                    },
-                    pagination: {
-                        el: pagi || null,
-                        clickable: true,
-                    },
-                    // autoplay: {
-                    //     delay: 3000,
-                    //     disableOnInteraction: false,
-                    // },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                        }
-                    },
-                });
-            });
-        }
-    }
-
-
-    // xử lý sự kiện chuyển tab
-    function handleChangeTab () {
-        const changTabs = document.querySelectorAll('.js__changeTab')
-
-        if (changTabs.length === 0) return;
-
-        changTabs.forEach((changTab)=>{
-            const tabs = changTab.querySelectorAll(".js__tabItem");
-            const panes = changTab.querySelectorAll(".js__tabPane");
-
-            tabs.forEach((tab,index)=>{
-                tab.onclick = function() {
-                    pane = panes[index]
-
-                    changTab.querySelector('.js__tabItem.active').classList.remove('active')
-                    changTab.querySelector('.js__tabPane.active').classList.remove('active')
-
-                    this.classList.add('active')
-                    pane.classList.add('active')
-                }
-            })
-        })
-    }
-
     // xử lý show search pc
     function handleShowSearchPc() {
         
@@ -266,9 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
         handleVideo169();
         // slide
         initSliderOneItems();
-        initSliderThreeItems();
         
-        // handleChangeTab();
         window.addEventListener('scroll',handleWindowScroll);
         window.addEventListener('resize',handleWindowScroll);
     }
