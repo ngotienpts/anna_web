@@ -129,6 +129,34 @@ document.addEventListener("DOMContentLoaded", function () {
       
     }
 
+    // sử lý show search mb
+    function handleShowSearchMb() {
+        
+        const searchMb = document.querySelector(".js__searchMb");
+
+
+        if (!searchMb) return;
+        var closeSearchMb =
+            document.querySelector(".js__closeSearchMb");
+
+        var formSearchMb = document.querySelector(".js__formSearchMb");
+
+        const focusElement =
+            formSearchMb.querySelector(".js__focusSearchMb");
+
+        searchMb.onclick = function () {
+            formSearchMb.classList.add("active");
+            focusElement.focus();
+            if (formSearchMb.classList.contains("active")) {
+                focusElement.value = "";
+            }
+        };
+        closeSearchMb.onclick = function () {
+            formSearchMb.classList.remove("active");
+            focusElement.value = "";
+        };
+      
+    }
 
     // Xử lý sự kiện khi nhấn nút "back to top"
     function handleBackTop() {
@@ -232,6 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function initApp() {
         handleBackTop();
         handleShowSearchPc();
+        handleShowSearchMb();
         handleShowSubMenu();
         handleShowDropdownSubMenu();
         handleVideo169();
