@@ -330,6 +330,24 @@
         height: 16px;
         width: auto;
     }
+
+    &-secondary {
+
+        .social-link {
+            width: 30px;
+            height: 30px;
+            border-radius: 999px;
+            background-color: #fff;
+
+            &:hover {
+                background-color: #222;
+
+                .social-icon {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
 }
 
 .search {

@@ -238,6 +238,11 @@
             width: 100%;
         }
     }
+    .cmt-box {
+        .avatar {
+            width: 56px;
+        }
+    }
 
     // --------------------------------------------------------------------footer
 
@@ -395,6 +400,19 @@
 
         blockquote {
             padding: 20px;
+            margin: 20px 0;
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .related-news {
+        &__content {
+            .article {
+                margin: 10px 0;
+            }
         }
     }
 
@@ -406,6 +424,23 @@
 
         &__left {
             
+        }
+    }
+
+    .cmt-box {
+        .avatar {
+            width: 40px;
+        }
+
+        .cmt-form {
+            .form-group {
+                &--name,
+                &--email,
+                &--web {
+                    width: 100%;
+                }
+            }
+    
         }
     }
     // --------------------------------------------------------------------footer
